@@ -26,7 +26,7 @@ func main() {
 	}
 
 	for _, entry := range index {
-		for _, buildId := range entry.XDebugBuildIds {
+		for _, buildId := range entry.DebugBuildIds {
 			fmt.Printf("%s %s %s %s\n", buildId, entry.Source, entry.Version, entry.Filename)
 		}
 	}
